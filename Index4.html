@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi 3 pagina web Responsive</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height:1.5;
+        }
+
+        header, nav, main, footer {
+            padding: 15px;
+        }
+
+        header {
+            background: #e29923;
+            color: white;
+        }
+
+        nav {
+            background: #f3f4f6;
+        }
+
+        footer {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+        }
+
+
+        /* Centramos el contenido y lo hacemos "responsive" con max-width */
+        .wrap {
+            max-width: 900px;
+            margin: auto;
+            gap: 5px;
+        }
+
+        main div {
+            display: flex;
+        }
+
+        /* Navegacion simple que se ajusta sola */
+        nav a {
+            display: inline-block;
+            margin: 5px 10px 5px 0;
+            padding: 8px 10px;
+            background: white;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #111;
+        }
+
+        /* Cajas en vertical (siempre se ve bien en móvil) */
+        .caja {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+        }
+    
+        img {
+           max-width: 100%;
+           height: auto;
+           display: block;
+       }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="wrap">
+            <h1>Mi Web Responsive-Gustavo Fuentes</h1>
+            <p>Esto funciona bien en movil sin casi usar media queries.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="wrap">
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Galeria</a>
+            <a href="#">Contacto</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="wrap">
+            <section class="caja">
+                <h2>Sección A</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis necessitatibus maiores voluptates rerum culpa aliquam, neque corrupti suscipit. Facilis quae rem molestiae obcaecati sit aliquam. Officiis, porro labore. Molestias, dolores?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nulla sed dolorem voluptas quia nemo ex adipisci reprehenderit quaerat laboriosam iure, libero explicabo dolor iste error quis. In, voluptate alias?</p>
+                <img src="img/peep.jpg" alt="">
+            </section>
+
+            <section class="caja">
+                <h2>Sección B</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eaque necessitatibus fugit modi animi quis porro nulla dolor et tempora temporibus deleniti vitae dolores, architecto, optio suscipit quia. Omnis, dolore!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nemo commodi iusto sapiente corporis omnis ut perferendis odit facilis nam eum dolore quas ipsa, repudiandae aliquam accusamus ducimus mollitia? Nobis.</p>
+                <img src="img/kanyee.jpg" alt="">
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <p> 2026 - Ejemplo básico responsive</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
